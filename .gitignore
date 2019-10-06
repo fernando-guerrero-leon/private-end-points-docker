@@ -2,4 +2,3 @@
 .*.sw?
 encryptme_conf/
 test-*.sh
-sftp-config.json
