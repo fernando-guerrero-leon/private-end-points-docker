@@ -451,7 +451,7 @@ rem "Configuring and starting strongSwan"
     || fail "Failed to start DNS filter"
 
 rundaemon /usr/local/unbound-1.7/sbin/unbound \
-    -c /usr/local/unbound-1.7/etc/unbound/unbound.conf \
+    -c /usr/local/unbound-1.7/etc/unbound/unbound.conf -d & \
     || fail "Failed to start unbound"
 
 
