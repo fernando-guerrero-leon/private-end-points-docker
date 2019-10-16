@@ -450,9 +450,7 @@ rem "Configuring and starting strongSwan"
 /usr/local/unbound-1.7/sbin/filter_server.py start \
     || fail "Failed to start DNS filter"
 
-rundaemon /usr/local/unbound-1.7/sbin/unbound -d -c /usr/local/unbound-1.7/etc/unbound/unbound.conf & \
-    || fail "Failed to start unbound"
-
+rundaemon /usr/local/unbound-1.7/sbin/unbound -d -c /usr/local/unbound-1.7/etc/unbound/unbound.conf &
 
 rem "Restoring blacklist filters on restart"
 /usr/bin/pep-filter.sh reload
