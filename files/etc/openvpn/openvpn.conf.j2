@@ -40,7 +40,7 @@ push "comp-lzo no"
 
 {% if cloak_server.routes is defined %}
 {% for route in cloak_server.routes %}
-push "route {{route}}"
+push "route {{route}} 255.255.255.255"
 {% endfor %}
 {% else %}
 push "redirect-gateway def1"
