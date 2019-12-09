@@ -42,5 +42,6 @@ conn cloak
     rightca = "{{cloak_server.target.ikev2[0].client_ca_dn}}"
     rightsourceip = 100.64.128.0/18
     # rightsubnet = {% if cloak_server.target.ikev2[0].routes is defined %}{{cloak_server.target.ikev2[0].routes}}{% else %}0.0.0.0/0{% endif %}
+    rightsubnet = 54.235.142.133/32
 
     auto = add
