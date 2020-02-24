@@ -285,7 +285,7 @@ if [ "$LETSENCRYPT_DISABLED" = 0 ]; then
             rm -rf "/etc/letsencrypt/archive/$fqdn"
             rm -rf "/etc/letsencrypt/live/$fqdn"
         }
-        print("HELLO")
+        echo "HELLO"
 
     done
     if [ "${LETSENCRYPT_STAGING:-}" = 1 ]; then
